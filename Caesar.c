@@ -11,13 +11,13 @@ int main(void)
     char b[800];
     while(key<=0||key==getchar()||key!=(int) key)
     {
-        printf("input a key£¨Êı×Ö£©:");
+        printf("input a key(a number):");
         fflush(stdin);
         scanf("%f",&key);
     }
     if(key>26)
         key=(int)key%26;
-    printf("plaintext£¨Ô­ÎÄ£©:");
+    printf("plaintext(origin text):");
     while(1)
     {
         scanf("%c",&a);
@@ -31,7 +31,7 @@ int main(void)
             b[i]=a;
         i++;
     }
-    printf("ciphertext£¨ÃÜÂë£©:%s\n",b);
+    printf("ciphertext(after transform):%s\n",b);
     system("pause");
     return 0;
 }
